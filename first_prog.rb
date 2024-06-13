@@ -8,7 +8,7 @@ end
 
 sum = 0
 for i in 0..1 do
-    sum = sum + arr[i].to_i
+    sum = sum + arr[i]
 end
 
 puts ("\t The summation for the numbers is: " + sum.to_s )  

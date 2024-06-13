@@ -1,4 +1,6 @@
-arr = []
+=begin
+
+arr = Array.new
 puts "Enter 2 Numbers : "
 for i in 1..2 do
     puts "Enter Number #{i} : "
@@ -29,4 +31,12 @@ end
 
 puts "your name is: #{name}"
 puts "your age is: #{age}"
-puts "your were born in #{year}"
+puts "your were born in #{year}" 
+
+=end
+
+array = ["Omar", "Salem", "Alotabi"]
+bol = array.include? "Omar"
+puts bol
+puts array.sort()
+

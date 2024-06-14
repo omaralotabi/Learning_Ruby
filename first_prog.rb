@@ -33,10 +33,20 @@ puts "your name is: #{name}"
 puts "your age is: #{age}"
 puts "your were born in #{year}" 
 
-=end
+
 
 array = ["Omar", "Salem", "Alotabi"]
 bol = array.include? "Omar"
 puts bol
 puts array.sort()
 
+=end
+
+# Hashes
+country = {
+    1 => "PS",
+    :Jordan => "JO",
+    "Syria" => "SY"
+}
+
+puts country["Palestine"]

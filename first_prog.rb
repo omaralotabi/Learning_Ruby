@@ -40,7 +40,6 @@ bol = array.include? "Omar"
 puts bol
 puts array.sort()
 
-=end
 
 # Hashes
 country = {
@@ -50,3 +49,13 @@ country = {
 }
 
 puts country["Palestine"]
+
+=end
+
+#methods\functions
+
+def sayhi(name, age)
+    puts "hi #{name} you are #{age} years old"
+end
+
+sayhi("omar", 21)

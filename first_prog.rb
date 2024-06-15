@@ -50,7 +50,7 @@ country = {
 
 puts country["Palestine"]
 
-=end
+
 
 #methods\functions
 
@@ -59,3 +59,12 @@ def sayhi(name, age)
 end
 
 sayhi("omar", 21)
+
+=end
+
+def cube(num)
+    return num*num*num, 70
+    5
+end
+
+puts cube(2)[0]

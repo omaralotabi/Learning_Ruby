@@ -60,7 +60,6 @@ end
 
 sayhi("omar", 21)
 
-=end
 
 def cube(num)
     return num*num*num, 70
@@ -68,3 +67,16 @@ def cube(num)
 end
 
 puts cube(2)[0]
+
+=end
+
+ismale = true
+istall = false
+
+if ismale && istall
+    puts "You are tall male"
+elsif ismale || istall
+    puts "You are either male or tall"
+else
+    puts "you are neither male or tall "
+end

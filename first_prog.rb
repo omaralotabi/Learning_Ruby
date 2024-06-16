@@ -175,7 +175,7 @@ arr.each do |name|
     puts "Name: #{name.downcase}"
 end
 
-=end
+
 
 
 # pow method
@@ -195,3 +195,49 @@ def pow(base_num, pow_num)
 end
 
 puts pow(5,-4)
+
+=end
+
+#reading files 1
+
+file = File.open("hi_ruby.txt", "r")
+
+puts file.read
+
+file.close()
+
+#reading files 2
+
+File.open("hi_ruby.txt", "r") do |file|
+
+    puts file.read()
+
+end
+File.open("hi_ruby.txt", "r") do |file|
+
+    puts file.readline()
+
+end
+
+File.open("hi_ruby.txt", "r") do |file|
+
+    puts file.readchar()
+
+end
+
+File.open("hi_ruby.txt", "r") do |file|
+
+    puts file.readlines()[2]
+        
+    
+end
+
+File.open("hi_ruby.txt", "r") do |file|
+
+    for line in file.readlines()
+        puts line
+    end
+
+    
+end
+

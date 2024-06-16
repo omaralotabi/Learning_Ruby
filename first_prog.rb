@@ -99,8 +99,8 @@ end
 
 puts max(5, 7, 2)
 
-=end
 
+# calculator
 
 def sum(x, y)
     x + y
@@ -159,5 +159,19 @@ while ch != "Q" || ch != "q"
     
 end
 
+=end
 
+# loop throgh array
+#1
 
+arr = ["omar","ali","khalid","mohammad","zaid","obaida","Salem"]
+
+for name in arr do
+    puts "Name: #{name.upcase}"
+end
+
+#2
+
+arr.each do |name|
+    puts "Name: #{name.downcase}"
+end

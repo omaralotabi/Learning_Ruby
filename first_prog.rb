@@ -68,7 +68,8 @@ end
 
 puts cube(2)[0]
 
-=end
+
+#if statements 1
 
 ismale = true
 istall = false
@@ -80,3 +81,22 @@ elsif ismale || istall
 else
     puts "you are neither male or tall "
 end
+
+=end
+
+
+def max(x, y, z)
+    arr = [x, y, z]
+    mx = arr[0]
+
+    for i in 0..2 do
+        if arr[i] > mx
+            mx = arr[i]
+        end
+    end
+    return mx
+end
+
+puts max(5, 7, 2)
+
+

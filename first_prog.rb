@@ -159,7 +159,6 @@ while ch != "Q" || ch != "q"
     
 end
 
-=end
 
 # loop throgh array
 #1
@@ -175,3 +174,24 @@ end
 arr.each do |name|
     puts "Name: #{name.downcase}"
 end
+
+=end
+
+
+# pow method
+def pow(base_num, pow_num)
+    result = 1.0
+    if pow_num >= 0 
+        pow_num.times do |index|
+            result = result * base_num
+        end
+    elsif pow_num < 0 
+        (-pow_num).times do |index|
+            result = result * base_num
+        end
+        result = 1 / result
+    end
+    return result
+end
+
+puts pow(5,-4)

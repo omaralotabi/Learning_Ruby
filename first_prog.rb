@@ -82,8 +82,8 @@ else
     puts "you are neither male or tall "
 end
 
-=end
 
+#if statements 2
 
 def max(x, y, z)
     arr = [x, y, z]
@@ -98,5 +98,66 @@ def max(x, y, z)
 end
 
 puts max(5, 7, 2)
+
+=end
+
+
+def sum(x, y)
+    x + y
+end
+
+def mult(x, y)
+    x * y
+end
+
+def div(x, y)
+    if y == 0
+        puts "you cant divide on 0"
+    else
+        x / y
+    end
+end
+
+def sub(x, y)
+    x - y
+end
+
+arr = []
+ch =""
+
+while ch != "Q" || ch != "q"
+
+    puts "write 2 numbers"
+    for i in 0..1 do
+        arr[i] = gets.chomp().to_f
+    end
+
+    puts "
+    for sum enter 1
+    for sub enter 2
+    for mult enter 3
+    for div enter 4
+    to exit press Q
+    "
+    ch = gets.chomp()
+
+    case ch
+    when "1"
+        puts "Result = #{sum(arr[0], arr[1])}"
+    when "2"
+        puts "Result = #{sub(arr[0], arr[1])}"
+    when "3"
+        puts "Result = #{mult(arr[0], arr[1])}"
+    when "4"
+        puts "Result = #{div(arr[0], arr[1])}"
+    when "q" , "Q"
+        puts "exiting the program"
+        break
+    else 
+        puts "invalid choice"
+    end
+    
+end
+
 
 

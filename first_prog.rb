@@ -327,7 +327,6 @@ car1 = Car.new("ferrari", "red", "360MPh")
 
 puts car1
 
-=end
 
 
 #Object Methods
@@ -354,3 +353,39 @@ student1 = Student.new("Mohammad Ali", "Software Engineering", 2.8)
 student2 = Student.new("Saad Safi", "business", 3.1)
 
 puts student1.has_honors
+
+=end
+
+#Building simple test 
+class Questions
+    attr_accessor :prompt, :answer
+    def initialize(prompt, answer)
+        @prompt = prompt
+        @answer = answer
+    end
+end
+    p1 ="what color are apples?\n(a)red\n(b)white\n(c)black"
+    p2 ="what color are bananas?\n(a)red\n(b)yellow\n(c)black"
+    p3 ="what color are lemons?\n(a)red\n(b)white\n(c)yellow"
+
+    questions = [
+        Questions.new(p1, "a"),
+        Questions.new(p2, "b"),
+        Questions.new(p3, "c")
+    ]
+
+    def run_test(questions)
+        answer = ""
+        score = 0
+
+        for question in questions
+            puts question.prompt
+            answer = gets.chomp()
+            if answer == question.answer
+                score +=1
+            end
+        end
+        puts "You got #{score} / #{questions.length()}"
+    end
+
+    run_test(questions)

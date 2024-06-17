@@ -265,8 +265,6 @@ rescue TypeError => e
     puts e
 end
 
-=end
-
 #classes & objects
 
 class Book
@@ -304,5 +302,28 @@ car1 = Car.new()
 car1.model = "ferrari"
 car1.color = "red"
 car1.max_speed = "360MPh"
+
+puts car1
+
+=end
+
+
+# initialize method
+class Car
+    attr_accessor :model, :color, :max_speed
+
+    def initialize(model, color, max_speed)
+        @model = model
+        @color = color
+        @max_speed = max_speed
+    end
+
+    def to_s
+        "Car Model: #{@model}, Car Color: #{@color}, Car Maximum speed: #{@max_speed}"
+    end
+
+end
+
+car1 = Car.new("ferrari", "red", "360MPh")
 
 puts car1

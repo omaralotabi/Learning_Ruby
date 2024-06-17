@@ -252,7 +252,6 @@ File.open("name.txt", "w") do |file|
     file.write("\nOmar")
 end
 
-=end
 
 #Handling Errors
 arr = [1, 2, 3, 4, 5, 6]
@@ -265,3 +264,45 @@ rescue ZeroDivisionError
 rescue TypeError => e
     puts e
 end
+
+=end
+
+#classes & objects
+
+class Book
+    attr_accessor :title, :author, :pages
+
+    def to_s
+        "Title: #{@title}, Author: #{@author}, Pages: #{@pages}"
+    end
+end
+
+book1 = Book.new()
+book1.title = "book name"
+book1.author = "omar"
+book1.pages = 460
+
+puts book1
+
+book2 = Book.new()
+book2.title = "cyprus history"
+book2.author = "idk"
+book2.pages = 738
+
+puts book2
+
+class Car
+    attr_accessor :model, :color, :max_speed
+
+    def to_s
+        "Car Model: #{@model}, Car Color: #{@color}, Car Maximum Speed: #{@max_speed}"
+    end
+
+end
+
+car1 = Car.new()
+car1.model = "ferrari"
+car1.color = "red"
+car1.max_speed = "360MPh"
+
+puts car1

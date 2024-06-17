@@ -305,7 +305,6 @@ car1.max_speed = "360MPh"
 
 puts car1
 
-=end
 
 
 # initialize method
@@ -327,3 +326,31 @@ end
 car1 = Car.new("ferrari", "red", "360MPh")
 
 puts car1
+
+=end
+
+
+#Object Methods
+class Student
+    attr_accessor :name, :major, :cgpa
+
+    def initialize(name, major, cgpa)
+        @name = name
+        @major = major
+        @cgpa = cgpa
+    end
+
+    def has_honors
+        if @cgpa >= 3
+            "Student #{@name} has honors"
+        else 
+            "Student #{@name} does not has honors"
+        end
+    end
+
+end
+
+student1 = Student.new("Mohammad Ali", "Software Engineering", 2.8)
+student2 = Student.new("Saad Safi", "business", 3.1)
+
+puts student1.has_honors

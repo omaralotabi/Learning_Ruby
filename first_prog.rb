@@ -240,8 +240,6 @@ File.open("hi_ruby.txt", "r") do |file|
     
 end
 
-=end
-
 #writing files
 
 #"r" reading only | "r+" read-write ("w", "w+", "a", "a+", "b", "t")
@@ -254,4 +252,16 @@ File.open("name.txt", "w") do |file|
     file.write("\nOmar")
 end
 
+=end
 
+#Handling Errors
+arr = [1, 2, 3, 4, 5, 6]
+
+begin
+    #num = 10/0
+    arr["hi"]
+rescue ZeroDivisionError
+    puts "division by 0 error"
+rescue TypeError => e
+    puts e
+end

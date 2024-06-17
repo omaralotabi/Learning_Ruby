@@ -196,7 +196,6 @@ end
 
 puts pow(5,-4)
 
-=end
 
 #reading files 1
 
@@ -240,4 +239,19 @@ File.open("hi_ruby.txt", "r") do |file|
 
     
 end
+
+=end
+
+#writing files
+
+#"r" reading only | "r+" read-write ("w", "w+", "a", "a+", "b", "t")
+
+File.open("hi_ruby.txt", "a") do |file|
+    file.write("\nHi again")
+end
+
+File.open("name.txt", "w") do |file|
+    file.write("\nOmar")
+end
+
 

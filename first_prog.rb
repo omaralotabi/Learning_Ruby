@@ -354,7 +354,6 @@ student2 = Student.new("Saad Safi", "business", 3.1)
 
 puts student1.has_honors
 
-=end
 
 #Building simple test 
 class Questions
@@ -389,3 +388,33 @@ end
     end
 
     run_test(questions)
+
+=end
+
+
+# Inheritance
+    class Chef
+        def make_chicken
+            puts "The chef makes chicken"
+        end
+        def make_salad
+            puts "The chef makes salad"
+        end
+        def make_special
+            puts "The chef makes bbq ribs"
+        end
+    end
+
+    class ItalianChef < Chef #to inheritance (used to assign the methods of a class to another without needing to rewrite it again)
+        def make_special
+            puts "The chef makes italian pizza"
+        end
+        def make_pasta
+            puts "The chef makes italian pasta"
+        end
+    end
+    chef = Chef.new()
+    chef.make_special
+
+    italian_chef = ItalianChef.new()
+    italian_chef.make_special

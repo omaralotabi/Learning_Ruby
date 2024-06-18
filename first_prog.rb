@@ -389,7 +389,6 @@ end
 
     run_test(questions)
 
-=end
 
 
 # Inheritance
@@ -418,3 +417,13 @@ end
 
     italian_chef = ItalianChef.new()
     italian_chef.make_special
+
+=end
+
+
+#module
+require_relative "useful_tools.rb"
+
+
+include Tools
+Tools.sayhi("omar")
